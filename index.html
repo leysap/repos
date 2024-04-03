@@ -16,19 +16,43 @@
         <form action="" method="get">
             <div>
                 <label for="">¿Cuantos productos tendrá?</label>
-                <input required type="number" >
+                <input id="products" name="prods" required type="number" >
             </div>
             <div>
                 <label for="">NOMBRE Y APELLIDO</label>
                 <input type="text" placeholder="COLOQUE SU NOMBRE COMPLETO">
             </div>
             <div>
-                <label for="">INDIQUE SU DIRECCION</label>
-                <input type="text" placeholder="COLOQUE SU DIRECCION">
+                <label for="">INDIQUE SU DIRECCION de envio</label>
+                <input type="text" id="dir" name="direccion" placeholder="COLOQUE SU DIRECCION">
             </div>
             <div>
                 <label for="">Indique su ciudad</label>
-                <input type="text" placeholder="COLOQUE SU ciudad">
+                <select name="" id="">
+                    <option value="Madrid">Madrid</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Cadiz">Cadiz</option>
+                </select>
+            </div>
+            <div>
+                <p>Que pan es su favorito?
+                </p>
+                <div>
+                    <input type="radio" id="type">
+                    <label for="type">
+                        Centeno
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" >
+                    <label for="">Cebada</label>
+                </div>
+                <div>
+                    <input type="radio">
+                    <label for="">Sin gluten</label>
+                </div>
             </div>
             <button type="submit">ENVIAR</button>
             <button type="reset">LIMPIAR</button>
